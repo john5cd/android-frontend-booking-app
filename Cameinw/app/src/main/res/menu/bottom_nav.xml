@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navB_search"
+        android:icon="@drawable/search_icon"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navB_message"
+        android:icon="@drawable/ic_message"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/navB_profile"
+        android:icon="@drawable/person_review"
+        android:title="Profile" />
+
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".activities.LocationActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            android:hint="Address"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="text"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressNumber"
+            android:hint="Address Number"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="phone"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postalCode"
+            android:hint="Postal Code"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="phone"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/municipality"
+            android:hint="Municipality"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="text"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/city"
+            android:hint="City"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="text"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/country"
+            android:hint="Country"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:padding="10dp"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/locatePlaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipButton"
+        android:layout_margin="15dp"
+        android:text="Locate"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:backgroundTint="@color/DarkerGreen"
+        android:enabled="false"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="1dp"
+        android:text="Maybe Later"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:backgroundTint="@color/lightGrey"/>
+
+</RelativeLayout>

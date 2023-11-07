@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Cameinw</string>
+    <string name="form_userName">User Name</string>
+    <string name="form_email">Email</string>
+    <string name="form_firstName">First Name</string>
+    <string name="form_lastName">Last Name</string>
+    <string name="form_password">Password</string>
+    <string name="form_repeatPassword">Repeat Password</string>
+    <string name="form_phoneNumber">Phone Number</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="role">
+        <item>USER</item>
+        <item>OWNER</item>
+    </string-array>
+    <string-array name="property">
+        <item>HOTEL</item>
+        <item>APARTMENT</item>
+        <item>CAMPSITE</item>
+        <item>RESORT</item>
+        <item>VILLA</item>
+    </string-array>
+
+    <string-array name="review">
+        <item>ONE_STAR</item>
+        <item>TWO_STARS</item>
+        <item>THREE_STARS</item>
+        <item>FOUR_STARS</item>
+        <item>FIVE_STARS</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>CASH</item>
+        <item>CARD</item>
+        <item>CASH &amp; CARD</item>
+    </string-array>
+
+    <string name="profile">Profile</string>
+    <string name="messages">Messages</string>
+    <string name="message">Message</string>
+    <string name="type_message">Type your message...</string>
+    <string name="send">Send</string>
+
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+
+</resources>

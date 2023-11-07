@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reservations"
+            android:icon="@drawable/reservations_icon"
+            android:title="Reservations" />
+
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/places_icon"
+            android:title="Places"/>
+
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+    </group>
+</menu>

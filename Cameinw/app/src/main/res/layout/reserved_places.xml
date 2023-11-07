@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <GridLayout
+            android:id="@+id/gridreserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:rowCount="3"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check In:"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/checkIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InputCheckIn"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Check Out:"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/checkOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Check Out"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/addressInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Address"
+                android:textSize="18dp"/>
+
+        </GridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/makeReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Review"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/leaveReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gridreserve"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Leave a review"
+        android:inputType="text"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Save"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/spinnerReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveReview"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:entries="@array/review"
+        android:spinnerMode="dropdown"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerReview"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
